@@ -74,3 +74,20 @@ def selection_sort(lst: List[Real], n: Optional[int] = None) -> List[Real]:
     Introduction to Algorithm page 10.
     """
 
+    n = len(lst) if n is None else n
+
+    lst_b = []
+    smallest_temp = lst[0]
+
+    for _ in range(n):
+        for i in range(1, n):
+
+            if lst[i] < smallest_temp and smallest_temp not in lst_b:
+                smallest_temp = lst[i]
+
+        lst_b.append(smallest_temp)
+
+    return lst_b
+
+
+print(selection_sort(lst1))
