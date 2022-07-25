@@ -24,3 +24,9 @@ def linear_search(lst: List[Real], v: Real) -> Optional[int]:
         Index of the element found in the list.
     """
 
+    for i in range(len(lst)):
+        if lst[i] == v:
+            return i
+
+print(linear_search([1, 4], 1))
+print(linear_search([1, 4], 6))
