@@ -66,3 +66,11 @@ def inverted_insertion_sort(lst: List[Real]) -> None:
                 lst.insert(j, sorting_item)
 
 
+# TODO: Finish this function.
+def selection_sort(lst: List[Real], n: Optional[int] = None) -> List[Real]:
+    """
+    See Also
+    ----------
+    Introduction to Algorithm page 10.
+    """
+
