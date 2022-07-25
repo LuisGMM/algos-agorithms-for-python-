@@ -54,3 +54,15 @@ def inverted_insertion_sort(lst: List[Real]) -> None:
         list to be sorted in place
     """
 
+    for i in range(1, len(lst)):
+        for j in range(i):
+
+            if i == j:
+                continue
+
+            sorting_item = lst[i]
+            if lst[i] > lst[j]:
+                del lst[i]
+                lst.insert(j, sorting_item)
+
+
